@@ -70,7 +70,7 @@ ____________________________________
 ╔═════◇
 ║ 『••• OWNER INFO •••』
 
-║ ❒ 𝐎wner: _https://wa.me/message/6ST5TFZLH6BGF1_
+║ ❒ 𝐎wner: _https://wa.me/message/5WRTCPHFKUGFM1_
 
 ║ ❒ 𝐑𝐞𝐩𝐨: _https://github.com/Toputech/Topu-ai_
 
