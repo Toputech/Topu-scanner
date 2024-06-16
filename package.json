@@ -1,5 +1,5 @@
 {
-    "description": "qr",
+    "description": "topu-sessions",
     "main": "toputech.js",
   "engines" : { 
     "npm" : ">=9.7.2",
