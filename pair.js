@@ -58,25 +58,26 @@ router.get('/', async (req, res) => {
 
                let FLASH_MD_TEXT = `
 *𝕰𝖊𝖊𝖞... 𝖙𝖔𝖕𝖚 𝖉𝖒𝖍 𝖍𝖆𝖘 𝖏𝖚𝖘𝖙 𝖈𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 𝖙𝖍𝖊 𝖘𝖊𝖘𝖘𝖎𝖔𝖓 𝖎𝖉*
-*Wow you choosen TOPU-MD complete the deployment and enyoy the speed*
+*Wow you choosen 𝐀𝐋𝐎𝐍𝐄 𝐌𝐃 complete the deployment and enyoy the speed*
 ____________________________________
 ╔════◇
-║『 *TOPU AI IS READY TO DEPLOY』
+║『 *ALONE MD IS READY TO DEPLOY』
 ║ YOUR SESSION IS READY. COPY IT  
 ║ AND HOST IT ON YOUR WEB.
 ╚════════════════════╝
 ╔═════◇
 ║ 『••• OWNER INFO •••』
 
-║ ❒ 𝐎wner: _https://wa.me/message/5WRTCPHFKUGFM1_
+║ ❒ 𝐎wner: _https://wa.me/c/255673750170_
 
-║ ❒ 𝐑𝐞𝐩𝐨: _https://github.com/Toputech/Topu-ai_
+║ ❒ 𝐑𝐞𝐩𝐨: _https://github.com/Toputech/ALONE-MD-V1_
 
-║ ❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/BxelCdrHnDYBNfMy2jafgI_
+║ ❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/DizrXzN1o1k0HsrWay5hvX_
 
 ║ ❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029VaeRrcnADTOKzivM0S1r_
 ║ 
 ╚════════════════════╝ 
+ᴀʟᴏɴᴇ ᴍᴅ ɪs ᴠᴇʀʏ sᴀғᴇ ғᴏʀ ʏᴏᴜʀ ʜᴇʀᴏᴋᴜ ᴀᴄᴄᴏᴜɴᴛ ☺️❣️
  *©TOPU TECH*
 ___________________________________
 
