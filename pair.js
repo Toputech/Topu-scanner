@@ -72,7 +72,7 @@ ____________________________________
 
 ║ ❒ 𝐑𝐞𝐩𝐨: _https://github.com/Toputech/ALONE-MD-V1_
 
-║ ❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/DbpmgKxBfNq5ScTgXBJfrT_
+║ ❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/DdKP0nI2ZAm1AgyDQGN0tF_
 
 ║ ❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029VaeRrcnADTOKzivM0S1r_
 ║ 
