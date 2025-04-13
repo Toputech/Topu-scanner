@@ -11,7 +11,7 @@
   "author": "Topu Tech",
   "license": "GPL-3.0 license",
   "dependencies": {
-    "@whiskeysockets/baileys": "npm i gifted-baileys@1.5.4",
+    "@whiskeysockets/baileys": "1.5.4",
     "maher-zubair-baileys": "^6.6.5",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
