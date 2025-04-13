@@ -1,17 +1,17 @@
 {
-    "description": "topu-sessions",
-    "main": "./toputech.js",
+    "description": "qr",
+    "main": "./index.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node toputech.js"
+    "start": "node Gifted-Tech.js"
   },
-  "author": "Topu Tech",
+  "author": "GiftedTech",
   "license": "GPL-3.0 license",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.6.5",
+    "@whiskeysockets/baileys": "^6.5.0",
     "maher-zubair-baileys": "^6.6.5",
     "qrcode": "^1.5.3",
     "awesome-phonenumber": "^2.64.0",
