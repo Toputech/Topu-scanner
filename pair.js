@@ -55,7 +55,24 @@ router.get('/', async (req, res) => {
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_France_King.sendMessage(Pair_Code_By_France_King.user.id, { text: ''+ b64data });
+ const zlib = require('zlib');
 
+// Your JavaScript code as a string
+const code = b64data;
+
+// Compress the code (using deflate)
+zlib.deflate(code, (err, compressed) => {
+  if (err) throw err;
+
+  console.log("Compressed Buffer:", compressed);
+
+  // Decompress it
+  zlib.inflate(compressed, (err, decompressed) => {
+    if (err) throw err;
+
+    console.log("Decompressed Code:\n" + decompressed.toString());
+  });
+});
                let FLASH_MD_TEXT = `
 *𝕰𝖊𝖊𝖞... 𝖙𝖔𝖕𝖚 𝖉𝖒𝖍 𝖍𝖆𝖘 𝖏𝖚𝖘𝖙 𝖈𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 𝖙𝖍𝖊 𝖘𝖊𝖘𝖘𝖎𝖔𝖓 𝖎𝖉*
 *Wow you choosen 𝐀𝐋𝐎𝐍𝐄 𝐌𝐃 complete the deployment and enyoy the speed*
