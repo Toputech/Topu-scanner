@@ -44,7 +44,7 @@ router.get('/', async (req, res) => {
 			});
 
 			Qr_Code_By_France_King.ev.on('creds.update', saveCreds)
-			Qr_Code_By_France_Kingr.ev.on("connection.update", async (s) => {
+			Qr_Code_By_France_King.ev.on("connection.update", async (s) => {
 				const {
 					connection,
 					lastDisconnect,
