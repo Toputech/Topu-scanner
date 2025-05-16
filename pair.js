@@ -11,10 +11,7 @@ const {
     delay,
     makeCacheableSignalKeyStore,
     Browsers
-} = require(`# NPM
-npm install @whiskeysockets/baileys@vinikjkkj/Baileys-Public#fix-pairing
-# YARN v2
-yarn add @whiskeysockets/baileys@vinikjkkj/Baileys-Public#fix-pairing `);
+} = require("@whiskeysockets/baileys");
 
 function removeFile(FilePath){
     if(!fs.existsSync(FilePath)) return false;
