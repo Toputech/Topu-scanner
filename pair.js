@@ -35,26 +35,21 @@ router.get('/', async (req, res) => {
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
                 browser: ["Chrome (Linux)", "", ""]
              });
-             Pair_Code_By_France_King.ev.on("connection.update", async (s) => {
-    const { connection, lastDisconnect, isNewLogin } = s;
-
-    if (connection === "connecting" && !Pair_Code_By_France_King.authState.creds.registered) {
-        try {
-            num = num.replace(/[^0-9]/g, '');
-            const code = await Pair_Code_By_France_King.requestPairingCode(num);
-            if (!res.headersSent) {
-                await res.send({ code });
-            }
-        } catch (err) {
-            console.log("Error getting pairing code", err);
-            if (!res.headersSent) {
-                await res.send({ code: "Error getting pairing code" });
-            }
-        }
-    }
-
-    if (connection === "open") {
-        // your existing open connection code here
+             if(!Pair_Code_By_France_King.authState.creds.registered) {
+                await delay(1500);
+                        num = num.replace(/[^0-9]/g,'');
+                            const code = await Pair_Code_By_France_King.requestPairingCode(num)
+                 if(!res.headersSent){
+                 await res.send({code});
+                     }
+                 }
+            Pair_Code_By_France_King.ev.on('creds.update', saveCreds)
+            Pair_Code_By_France_King.ev.on("connection.update", async (s) => {
+                const {
+                    connection,
+                    lastDisconnect
+                } = s;
+                if (connection == "open") {
                 await delay(5000);
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
@@ -63,26 +58,25 @@ router.get('/', async (req, res) => {
 
                let FLASH_MD_TEXT = `
 *𝕰𝖊𝖊𝖞... 𝖙𝖔𝖕𝖚 𝖉𝖒𝖍 𝖍𝖆𝖘 𝖏𝖚𝖘𝖙 𝖈𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 𝖙𝖍𝖊 𝖘𝖊𝖘𝖘𝖎𝖔𝖓 𝖎𝖉*
-*Wow you choosen 𝐀𝐋𝐎𝐍𝐄 𝐌𝐃 complete the deployment and enyoy the speed*
+*Wow you choosen TOPU-MD complete the deployment and enyoy the speed*
 ____________________________________
 ╔════◇
-║『 *ALONE MD IS READY TO DEPLOY』
+║『 *TOPU AI IS READY TO DEPLOY』
 ║ YOUR SESSION IS READY. COPY IT  
 ║ AND HOST IT ON YOUR WEB.
 ╚════════════════════╝
 ╔═════◇
 ║ 『••• OWNER INFO •••』
 
-║ ❒ 𝐎wner: _https://wa.me/c/255673750170_
+║ ❒ 𝐎wner: _https://wa.me/message/5WRTCPHFKUGFM1_
 
 ║ ❒ 𝐑𝐞𝐩𝐨: _https://github.com/Toputech/ALONE-MD-V1_
 
-║ ❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/DdKP0nI2ZAm1AgyDQGN0tF_
+║ ❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/BxelCdrHnDYBNfMy2jafgI_
 
 ║ ❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029VaeRrcnADTOKzivM0S1r_
 ║ 
 ╚════════════════════╝ 
-ᴀʟᴏɴᴇ ᴍᴅ ɪs ᴠᴇʀʏ sᴀғᴇ ғᴏʀ ʏᴏᴜʀ ʜᴇʀᴏᴋᴜ ᴀᴄᴄᴏᴜɴᴛ ☺️❣️
  *©TOPU TECH*
 ___________________________________
 
