@@ -35,21 +35,26 @@ router.get('/', async (req, res) => {
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
                 browser: ["Chrome (Linux)", "", ""]
              });
-             if(!Pair_Code_By_France_King.authState.creds.registered) {
-                await delay(1500);
-                        num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_France_King.requestPairingCode(num)
-                 if(!res.headersSent){
-                 await res.send({code});
-                     }
-                 }
-            Pair_Code_By_France_King.ev.on('creds.update', saveCreds)
-            Pair_Code_By_France_King.ev.on("connection.update", async (s) => {
-                const {
-                    connection,
-                    lastDisconnect
-                } = s;
-                if (connection == "open") {
+             Pair_Code_By_France_King.ev.on("connection.update", async (s) => {
+    const { connection, lastDisconnect, isNewLogin } = s;
+
+    if (connection === "connecting" && !Pair_Code_By_France_King.authState.creds.registered) {
+        try {
+            num = num.replace(/[^0-9]/g, '');
+            const code = await Pair_Code_By_France_King.requestPairingCode(num);
+            if (!res.headersSent) {
+                await res.send({ code });
+            }
+        } catch (err) {
+            console.log("Error getting pairing code", err);
+            if (!res.headersSent) {
+                await res.send({ code: "Error getting pairing code" });
+            }
+        }
+    }
+
+    if (connection === "open") {
+        // your existing open connection code here
                 await delay(5000);
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
