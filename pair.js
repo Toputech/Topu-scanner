@@ -57,30 +57,16 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_France_King.sendMessage(Pair_Code_By_France_King.user.id, { text: ''+ b64data });
 
                let FLASH_MD_TEXT = `
-*𝕰𝖊𝖊𝖞... 𝖙𝖔𝖕𝖚 𝖉𝖒𝖍 𝖍𝖆𝖘 𝖏𝖚𝖘𝖙 𝖈𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 𝖙𝖍𝖊 𝖘𝖊𝖘𝖘𝖎𝖔𝖓 𝖎𝖉*
-*Wow you choosen TOPU-MD complete the deployment and enyoy the speed*
-____________________________________
-╔════◇
-║『 *TOPU AI IS READY TO DEPLOY』
-║ YOUR SESSION IS READY. COPY IT  
-║ AND HOST IT ON YOUR WEB.
-╚════════════════════╝
-╔═════◇
-║ 『••• OWNER INFO •••』
-
-║ ❒ 𝐎wner: _https://wa.me/message/5WRTCPHFKUGFM1_
-
-║ ❒ 𝐑𝐞𝐩𝐨: _https://github.com/Toputech/ALONE-MD-V1_
-
-║ ❒ 𝐖𝐚𝐆𝐫𝐨𝐮𝐩: _https://chat.whatsapp.com/BxelCdrHnDYBNfMy2jafgI_
-
-║ ❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029VaeRrcnADTOKzivM0S1r_
+THANKYOU FOR CHOOSING ALONE MD
+🔙💚☯️♡𝐃𝐑𝐈𝐏 𝐅𝐀𝐌𝐈𝐋𝐘  .. 🤼 💫
+  ╭━━━━❤━━━━╮
+  💥VERY ACTIVE 🙅
+      🕊️𝐂𝐥𝐞𝐚𝐧 𝐚𝐥𝐰𝐚𝐲𝐬🍏
+  ╰━━━━🥺━━━━╯💚🔙
+❒ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: _https://whatsapp.com/channel/0029VaeRrcnADTOKzivM0S1r_
 ║ 
-╚════════════════════╝ 
- *©TOPU TECH*
-___________________________________
-
-Don't Forget To Give Star To My Repo_`
+follow our channel to learn how to deploy..
+Repository available at our channel`
  await Pair_Code_By_France_King.sendMessage(Pair_Code_By_France_King.user.id,{text:FLASH_MD_TEXT},{quoted:session})
  
 
